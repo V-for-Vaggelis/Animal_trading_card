@@ -1,0 +1,65 @@
+/* add your CSS here */
+body{
+  border: medium hidden currentcolor;
+}
+.wrapper {
+  max-width: 300px;
+  background: url(http://i.imgur.com/dTjnnHe.jpg);
+  opacity: 0.9;
+  /*  The 3 following commands will ensure the whole image is included as a background*/
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px;
+  /*The max width is set to 300px as the images width should be and there is a padding of 10px added, the padding will be colored with the above color*/
+  border-radius: 10px;
+  /*  This will created rounded corners for the card*/
+}
+.em {
+  font-style: italic;
+}
+span {
+  font-weight: bold;
+}
+.title {
+  padding: 5px 10% 3px 10%;
+  text-align:center;
+  font-size: 26px;
+}
+.image {
+  max-width: 299px;
+  /*The image will extend no more than 299px. I will also add 1px border for it*/
+  text-align: center;
+  /*display:block;*/
+  margin:auto;
+  /*The upper two commands will center the image*/
+  /*If the width wasn't specified the display property would be neccesary for centering the image but it would have kept it's original width*/
+  border: 1px ridge rgba(61, 65, 61, 1);
+  /* The ridge value will make the information window look raised*/
+  border-radius: 10px;
+  /*makes the images edges look round*/
+  margin-bottom: 10px;
+}
+.info, .title {
+  font-family: Ubuntu;
+  /* I added this family in my html */
+  text-shadow: 1px 1px 0 #fbfcfd99;
+  /* This will help make the text visible despite inheriting the 0.8 opacity that is set below */
+  background-color: rgba(170, 200, 180, 0.8);
+  /* text-align:justify; (Justifying the text creates ugly gaps even though it perfectly evens the text on both sides) */
+  border: 10px ridge rgba(61, 65, 61, 0.7);
+  border-radius: 30px/10px;
+  /* it will give an eliptical shape: horizontal radius / vertical radius */
+  padding: 2px 2% 2px 6%;
+  /*margin: 0 20% 0 20%;*/
+}
+a:link, a:visited {
+    text-decoration: underline;
+    color: red;
+    /* The links will always be displayed with red, underlined font */
+}
+.no_bullets {
+  list-style: none inside none;
+  /*  This will remove the bullet marks from my list*/
+  padding-left: 0;
+}
